@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head lang="es">
+       <meta charset="utf-8">
+       <!--------------------PARA ADAPTAR CONTENIDO---------------------------->
+    <meta name="viewport" content="width-device-width , user-scalabre=no, initial-scale=1 maximum-scale=1, minimum-scale=1">
+    <!---------------------------------------------------------------------->
+       <link rel="stylesheet" type="text/css" href="estilos.css">
+       <!--------------ENLACE JAVASCRIPT PARA BOTON ARRIBA------------->
+	<script src="arriba.js"></script>
+	<!-------------------------------------------------------------->
+       <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+        <title>
+            Arquitectura design
+        </title>
+    </head>
+    <body>
+         <header class="header1">
+      <input type="checkbox" id="btn-menu">
+        <label class="label-menu" for="btn-menu"><img class="icon-menu" src="img/menu-ico.png" alt="menu"><img src="img/cerrar.png" alt="cerrar" class="cerrar-menu" ></label>
+        <h1 class="logo">Logo <span>design</span> </h1>
+         <nav class="menu">
+             <ul>
+                 <li id="ini" class="li1"><a href="#">Inicio</a></li>
+<!--                 <li class="li"><a href="#proyectos">Proyectos</a></li>-->
+                 <li class="li"><a href="#galeria">Galeria</a></li>
+                 <li class="li"><a href="#contacto">Contacto</a></li>
+             </ul>
+         </nav>
+        </header>
+        <div class="banner">
+        <div><h1>Proyectando tu futuro</h1></div>
+<!--        <img src="img/banner2.jpg" style="background-image: url('img/banner2.jpg')" style="background-size: cover" alt="banner">-->
+            <div id="img"></div>
+        </div>
+        <div class="titulo"><h1>Quienes Somos?</h1>
+        <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius nemo provident rem, et possimus voluptates nulla eaque inventore adipisci, mollitia totam amet beatae, iusto incidunt? Ad, aperiam, atque. Adipisci ab, soluta eos, hic animi sunt quidem optio sequi nesciunt autem.</span>
+        <span>Quibusdam, atque. Recusandae pariatur molestias velit ipsa id blanditiis vero voluptatem consectetur rem alias, nobis sequi fugiat rerum, eum voluptates inventore! Provident voluptatum numquam deleniti nobis odio tenetur corporis ipsa cumque, sed iste, quo commodi a, pariatur magni beatae soluta!</span><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit saepe odio numquam quis incidunt assumenda aliquam excepturi delectus officia dolor recusandae veniam itaque maxime, obcaecati quaerat quam, eos quidem, doloremque dolore adipisci rem? Totam harum cumque amet deserunt, odit ad.</span>
+        <span>Eaque et praesentium quam quisquam quidem vel, nihil necessitatibus dolore nobis distinctio, fugiat tenetur ipsa itaque, amet non voluptatibus maxime cupiditate ex ut eum obcaecati! Quas iure atque voluptas tempora officiis itaque voluptatibus tenetur adipisci, nostrum, eveniet recusandae totam eum.</span>
+        <span>Itaque et fuga veritatis, quibusdam repellendus qui vitae iure commodi excepturi tenetur porro error distinctio repudiandae necessitatibus, dolorem, totam maxime deleniti sit quo ullam expedita. Sapiente autem error doloremque, architecto praesentium iste reiciendis quis suscipit blanditiis. Perferendis commodi a unde?</span>
+        </p>
+        </div>
+<!------------------------------------------------------------------------------------------>
+<!------------------------------------------------------------------------------------------>
+<!--
+<div class="titulo" id="proyectos">
+<h1>Proyectos</h1>
+<p>
+<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius nemo provident rem, et possimus voluptates nulla eaque inventore adipisci, mollitia totam amet beatae, iusto incidunt? Ad, aperiam, atque. Adipisci ab, soluta eos, hic animi sunt quidem optio sequi nesciunt autem.</span>
+<span>Quibusdam, atque. Recusandae pariatur molestias velit ipsa id blanditiis vero voluptatem consectetur rem alias, nobis sequi fugiat rerum, eum voluptates inventore! Provident voluptatum numquam deleniti nobis odio tenetur corporis ipsa cumque, sed iste, quo commodi a, pariatur magni beatae soluta!</span><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit saepe odio numquam quis incidunt assumenda aliquam excepturi delectus officia dolor recusandae veniam itaque maxime, obcaecati quaerat quam, eos quidem, doloremque dolore adipisci rem? Totam harum cumque amet deserunt, odit ad.</span>
+<span>Eaque et praesentium quam quisquam quidem vel, nihil necessitatibus dolore nobis distinctio, fugiat tenetur ipsa itaque, amet non voluptatibus maxime cupiditate ex ut eum obcaecati! Quas iure atque voluptas tempora officiis itaque voluptatibus tenetur adipisci, nostrum, eveniet recusandae totam eum.</span>
+<span>Itaque et fuga veritatis, quibusdam repellendus qui vitae iure commodi excepturi tenetur porro error distinctio repudiandae necessitatibus, dolorem, totam maxime deleniti sit quo ullam expedita. Sapiente autem error doloremque, architecto praesentium iste reiciendis quis suscipit blanditiis. Perferendis commodi a unde?</span>
+</p>
+</div>
+-->
+<!------------------------------------------------------------------------------------------>
+<!------------------------------------------------------------------------------------------>
+<!------------------------------------------------------------------------------------------>
+<!------------------------------------------------------------------------------------------>
+<div class="titulo" id="galeria">
+<h1>Galeria</h1>
+<!-- galeria -->
+       <div id="modal" class="modal">
+            <img src="img/foto300x250.jpg" class="modal__img">
+            <div id="modal__boton"class="modal__boton">X</div>
+        </div>
+        <div class="galeria">
+<!--        <h1>Galeria de Imagenes</h1>-->
+        <div class="contenido">
+        <div class="galancho" id="galancho">
+        <div class="columna1" id="columna1">
+       <div id="foto1" class="small galimg">1</div>
+        <div id="foto2" class="large galimg">2</div>
+        <div id="foto3" class="small galimg">3</div>
+        </div>
+        <div class="columna2" id="columna2">
+        <div id="foto4" class="large galimg">4</div>
+        <div id="foto5" class="medium galimg">5</div>
+        <div id="foto6" class="large galimg">6</div>
+        </div>
+        <div class="columna3" id="columna3">
+            <div id="foto7" class="small galimg">7</div>
+            <div id="foto8" class="large galimg">8</div>
+            <div id="foto9" class="small galimg">9</div>
+        </div>
+        </div>
+        </div>
+        </div>
+</div>
+<!------------------------------------------------------------------------------------------>
+<!------------------------------------------------------------------------------------------>
+<!------------------------------------------------------------------------------------------>
+<!------------------------------------------------------------------------------------------>
+<div class="titulo" id="contacto">
+<h1>Contacto</h1>
+<!-------------------------------contacto----inicio---------------------------------------------->
+    <div id="contacto1">
+    <form action="enviar.php" method="post"><h3 class="titulos">Contacto</h3>
+        <input type="text" name="nombre" class="imput1" id="nombre" placeholder="Nombre" required >
+        <input type="text" name="apellido" class="imput1" id="apellido" placeholder="Apellido" required >
+        <input type="email" name="correo" class="imput1" id="correo" placeholder="Correo" required >
+        <input type="text" name="telefono" class="imput1" id="telefono" placeholder="telefono" required >
+        <textarea name="comentarios" id="comentarios" placeholder="Escribe tu comentario.." cols="30" rows="10"></textarea>
+        <input type="submit" value="Enviar" id="boton1">
+    </form>
+    </div>
+<!-------------------------------contacto----fin------------------------------------------------->
+</div>
+<!------------------------------------------------------------------------------------------>
+<!------------------------------------------------------------------------------------------>
+<!--    footer    -->
+        <footer class="footer0">
+            <div class="fsec" id="fsec1">
+                <h3>Calle #, Localidad, Provincia</h3>
+            </div>
+            <div class="fsec" id="fsec2">
+                <h3>correo@gmail.com</h3>
+            </div>
+            <div class="fsec" id="fsec3">
+               <img src="img/006-facebook-logo-button.svg" alt="" style="height:35px">
+               <img src="img/004-twitter-logo-button.svg" alt="" style="height:35px">
+               <img src="img/003-google-plus-logo-button.svg" alt="" style="height:35px">
+               <img src="img/005-instagram-logo.svg" alt="" style="height:35px">
+               <img src="img/002-linkedin-logo-button.svg" alt="" style="height:35px">
+            </div>    
+        </footer>
+        <footer class="footer1"><h4>Tu empresa aquí © 2017. Derechos reservados</h4></footer>
+        <!---BOTON ARRIBA --->   
+    <div class="btn-arriba"><p>^</p></div>
+        <script src="arriba.js"></script>
+         <script src="cambionav.js"></script>
+    </body>
+</html>
